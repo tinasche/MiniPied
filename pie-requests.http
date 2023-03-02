@@ -1,0 +1,36 @@
+GET https://localhost:7295/ HTTP/1.1
+
+###
+GET https://localhost:7295/pies/4 HTTP/1.1
+
+###
+GET https://localhost:7295/pies/names HTTP/1.1
+
+# TODO: Implement
+###
+GET https://localhost:7295/pies/light HTTP/1.1
+
+###
+DELETE https://localhost:7295/pies/2 HTTP/1.1
+
+###
+POST https://localhost:7295/pies HTTP/1.1
+Content-Type: application/json
+
+{
+    "Name": "strawberry and almond pie",
+    "Calories": 45.76,
+    "IsLight": true
+}
+
+###
+PUT https://localhost:7295/pies/4 HTTP/1.1
+Content-Type: application/json 
+
+{
+    "Name": "strawberry and almond",
+    "Calories": 48.76,
+    "IsLight": true
+}
+
+
